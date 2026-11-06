@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Тамагочи</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    .health-bar-container {
+      width: 200px;
+      height: 25px;
+      background: #ddd;
+      margin: 20px auto;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    #health-bar {
+      width: 200px;
+      height: 100%;
+      background: #4caf50;
+      transition: width 0.3s;
+    }
+    #health-text {
+      position: absolute;
+      width: 100%;
+      top: 3px;
+      left: 0;
+      font-weight: bold;
+      color: #333;
+    }
+    button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h2>Мой питомец Тамагочи 🐾</h2>
+
+  <div class="health-bar-container">
+    <div id="health-bar"></div>
+    <span id="health-text">100%</span>
+  </div>
+
+  <div>
+    <button id="damage-btn">Урон (-20)</button>
+    <button id="heal-btn">Лечить (+20)</button>
+    <button id="mega-damage">☄️ КРИТ (МЕГА-УРОН)</button>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
